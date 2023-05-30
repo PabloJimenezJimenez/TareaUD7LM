@@ -1,0 +1,6 @@
+<button (click)="mostrarMenu=!mostrarMenu" class="botonMenu">=</button>
+<ul *ngIf="mostrarMenu" class="menu" id="menu">
+    <li routerLink="/cronologico">Visualización Cronológica</li>
+    <li routerLink="/estados">Visualización por estados</li>
+    <li routerLink="/documentacion">Documentación</li>
+</ul>

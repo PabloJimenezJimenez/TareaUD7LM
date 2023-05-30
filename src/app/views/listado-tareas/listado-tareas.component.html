@@ -1,0 +1,24 @@
+<button (click)="nuevaTarea=!nuevaTarea" class="btnAdd">+</button>
+<div *ngIf="nuevaTarea" class="nueva-tarea">
+    <h4>NUEVA TAREA</h4>
+    <div id="enun">
+        <p>Nombre:</p>
+        <input type="text" [(ngModel)]="nombre">
+    </div>
+    <div id="hora">
+        <p>Hora:</p>
+        <input type="time" [(ngModel)]="hora">
+    </div>
+    <div id="dia">
+        <p>Fecha: </p>
+        <input type="date" [(ngModel)]="dia">
+    </div>
+    <div id="detalles">
+        <p>Detalles:</p>
+        <input type="text" [(ngModel)]="detalle">
+    </div>
+    <button (click)="addTarea();(nuevaTarea=!nuevaTarea)" >Añadir</button>
+</div>
+<div class="lista">
+    <app-tarea *ngFor="let tarea of listadoTarea" [tareaAtr]="tarea" (click)="modTarea(tarea)" [ngClass]="{'tarea-hecha':tarea.estado}" ></app-tarea>
+</div>

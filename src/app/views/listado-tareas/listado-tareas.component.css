@@ -1,0 +1,88 @@
+.lista{
+    margin-top: 3vh;
+    margin-left: 1vh;
+    margin-right: 1vh;
+    overflow-x: hidden;
+    border: solid;
+    border-color: black;
+    border-radius: 10px;
+}
+.nueva-tarea{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.nueva-tarea h4{
+    font-size: 20px;
+    text-align: center;
+}
+.nueva-tarea >div{
+    display: flex;
+    justify-content: center;
+    margin: 2vh;
+}
+.nueva-tarea >div input{
+    height: fit-content;
+    vertical-align: middle;
+    margin-top: 1.5vh;
+    margin-left: 5px;
+    border-radius: 5px;
+    border:  1px solid;
+    border-color: black;
+    
+}
+.nueva-tarea >div input:focus{
+    height: 4vh;
+    margin-top: 0%;
+    transition: 0.5s;
+}
+.nueva-tarea >div p{
+    text-align: center;
+}
+.nueva-tarea button{
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    border-radius: 10px;
+    border: none;
+    width: 30vw;
+}
+.nueva-tarea button:hover{
+    background-color: white;
+    color: black;
+    transition: 0.5s;
+    border:  1px solid black;
+}
+.btnAdd{
+    background-color: black;
+    color: white;
+    width: 20vw;
+    height: 4vh;
+    border: none;
+    font-size: 30px;
+    border-radius: 10px;
+}
+.btnAdd:hover{
+    transition: 0.5s;
+    background-color: white;
+    border-color: black;
+    border: solid;
+    color: black;
+}
+
+.tarea-hecha{
+    opacity: 50%;
+    text-decoration: line-through;
+}
+.tarea-sin-hacer{
+    opacity: 100%;
+    text-decoration: none;
+}
+/*-----------------------------------LAPTOP----------------------------------------------*/
+@media screen and (min-width:1280px){
+    .btnAdd{
+        border-radius: 90vw;
+        width: 5vw;
+    }
+}

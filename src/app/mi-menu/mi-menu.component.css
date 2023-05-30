@@ -1,0 +1,52 @@
+.menu{
+    list-style: none;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.menu li{
+    background-color: black;
+    margin: 10px;
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+}
+.menu li:hover{
+    transition: 0.5s;
+    background-color: white;
+    color: black;
+    border: solid;
+    border-color: black;
+    border-width: 3px;
+    cursor: pointer;
+}
+
+.botonMenu{
+    background-color: black;
+    color: white;
+    width: 20vw;
+    height: 4vh;
+    border: none;
+    font-size: 30px;
+    border-radius: 10px;
+}
+.botonMenu:hover{
+    transition: 0.5s;
+    background-color: white;
+    border-color: black;
+    border: solid;
+    color: black;
+}
+/*---------------------------------------LAPTOP------------------------------------*/
+@media screen and (min-width:1280px){
+    .botonMenu{
+        display: none;
+    }
+    .menu{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .menu li{
+        width: 20%;
+    }
+}

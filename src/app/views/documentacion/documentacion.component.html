@@ -1,0 +1,31 @@
+<ul>
+    <li>
+        <h2>Estructura de componentes y de las plantillas.</h2>
+        <p>He creado seis componentes más una interfaz. Desde el componente app muestro el menu y otro componente que puede ser, 
+            el listado de tareas por orden cronologico, el listado de tareas por estado o la documentación. 
+            Estos componentes los muestro dependiendo de que opción del menu haya elegido. Esto lo consigo usando rooting.
+            En las rutas he creado, además de una por componente, he añadido una por defecto que mostrara en pantalla el componente 
+            listado tareas ordenado cronologicamente y otra que muestra el componente not found cuando pone una ruta incorrecta.
+        </p>
+    </li>
+    <li>
+        <h2>Estructura del código e invocación de funciones (es aconsejable incluir un diagrama); estructuras de datos utilizados.</h2>
+        <p>El código lo he estructurado en los componentes mencionados anteriormente y en la interfaz. 
+            Esta última la he utilizado para crear las tareas. Ha estas se les puede dar valor en los componente listado-tarea y listado-tarea-estados.
+            Después de darle valor, las almaceno en un array de tareas que se comunica entre los dos componentes mediante localStorage.
+            En el componente listado-tarea, tengo una funcion que me lo ordena por fecha y en el componente listado-tarea-estados tengo
+            dos arrays de tareas uno para cada estado que se van modificando.
+        </p>
+    </li>
+    <li>
+        <h2>Problemas encontrados y soluciones, Posibles mejoras.</h2>
+        <p>-    Alguno de los problemas que he tenido han sido almacenar en localStorage ya que no me dajaba utilizar en un principio el
+            JSON.parse(), ya que me decía que el localStorage podía devolver un valor nulo. Esto lo solucione guardando el valor
+            del localStorage en una variable y haciendo un condicional.<br>
+            Otro problema que tuve fue el de comunicar el menu con cada uno de los componentes que tenian que mostrar. Esto lo solucione usando rooting.<br>
+            Tuve algun otro problema menor como a la hora de sustituir una posición del array que mirando la documentación de mozilla y los
+            apuntes,, solucione sin mucho problema.
+        </p>
+        <p>-    Mejoraría el diseño CSS y algunos metodos que son poco eficientes.</p>
+    </li>
+</ul>
